@@ -7,6 +7,91 @@
     <title>Menu</title>
 </head>
 <body>
-    
+    <div class="home-page">
+        <div>
+            <h1 class="logo">HAVINI PIZZA</h1>
+        </div>
+        <div>
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <h1 class="pageHeading">ORDER UP!</h1>
+
+    <div class="container">
+        <form onsubmit="return false">
+            <div class="mb-3">
+                <label for="pizzaType" class="form-label">Type</label>
+                <select name="pizzaType" class="form-select" id="type">
+                    <option></option>
+                    <option>Hawaiian</option>
+                    <option>Pepperoni</option>
+                    <option>Chicken Barbeque</option>
+                    <option>Beef Barbeque</option>
+                    <option>Margharita</option>
+                    <option>Vegetable Pizza</option>
+                    <option>Cheese Burger</option>
+                    <option>Meat Deluxe</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="pizzaSize">Sizes</label>
+                <select class="form-select" name="pizzaSize" id="size">
+                    <option></option>
+                    <option>Small @ 600</option>
+                    <option>Medium @ 800</option>
+                    <option>Large @ 1000</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="pizzaCrust">Crusts</label>
+                <select class="form-select" name="pizzaCrust" id="crust">
+                    <option></option>
+                    <option>Stuffed Crust @ 200</option>
+                    <option>Cracker Crust @ 200</option>
+                    <option>Cheese Crust @ 300</option>
+                    <option>Thick Crust @ 300</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="pizzaTopping">Toppings</label>
+                <select class="form-select" name="pizzaTopping" id="topping">
+                    <option></option>
+                    <option value="pepperoni">Pepperoni @ 100</option>
+                    <option value="mushrooms">Mushrooms @ 100</option>
+                    <option value="bacon">Bacon @ 200</option>
+                    <option value="olives">Olives @ 150</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="numberOfPizzas" class="form-label">Number of pizzas</label>
+                <input type="number" class="form-control" id="number">
+            </div>
+
+            <div>
+                <label for="delivery" class="form-label">Delivery</label>
+                <select name="delivery" class="form-select" id="delivery">
+                    <option value=""></option>
+                    <option value="delivery">Delivery @ 250</option>
+                    <option value="pick-up">Pick-up</option>
+                </select>
+            </div>
+            <div>
+                <button class="button" type="submit" onclick="getValues()">Order</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
