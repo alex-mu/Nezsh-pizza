@@ -4,20 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" src="style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <title>Nezsh-pizza</title>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <img src="Images/pizza-png-19310.png" class="card__img">
-            <div class="card__data">
-                <h1 class="card__title">Pizza</h1>
-                <span class="card__price">Ksh 99</span>
-                <p class="card__description">Pizza description goes here</p>
-                <a href="#" class="card__button">Order Now</a>
-            </div>
+    <div class="home-page">
+        <div>
+            <h1 class="logo">NEZSH-PIZZA</h1>
         </div>
+        <div>
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div>
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div>
+                <label for="textArea" class="form-label">Message</label>
+                <input type="text" class="form-control" id="message">
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
     </div>
 </body>
 <script src="JS/script.js"></script>
