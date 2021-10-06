@@ -1,0 +1,56 @@
+*{
+    font-family: 'poppins', sans-serif; 
+}
+body{
+    background-image: url(/Images/pizza-png-19310.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+.home-page{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: rgb(0, 0, 0,.2);
+    box-shadow: 0px 5px 5px 0px;
+}
+.logo{
+    font-size: 60px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(0,0,0, .3);
+    border: black solid 1px;
+    border-radius: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul :hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.pageHeading{
+    text-align: center;
+    font-size: 60px;
+    color: brown;
+}
+.form-label{
+    font-size: 20px;
+    color: brown;
+}
+.button{
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: brown;
+    margin-top: 10px;
+}
